@@ -8,8 +8,147 @@
 </head>
 
 <body>
-  
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <nav class="main-nav  clearfix">
+        <ul class="main-nav__list  main-nav__list--left">
+          <li>Информация</li>
+          <li>Фото и видео</li>
+        </ul>
+        <img src="img/main-header.png" alt="img" width="138" height="70">
+        <ul class="main-nav__list  main-nav__list--right">
+          <li>Карта штата</li>
+          <li>Гостинницы</li>
+        </ul>
+      </nav>
 
+      <div class="main-intro">
+        <div class="main-intro__img"></div>
+        <div class="main-descript">
+        <h1>Седона — небольшой городок в Аризоне,<br>
+            заслуживающий большего!
+        </h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </div>
+     
+    </div>
+  </header>
+
+  <section class="main-content">
+      <div class="advantage  advantage1  clearfix">
+          <div class="advantage1__img"></div>
+          <div class="advantage1__info">
+              <h2>НАСТОЯЩИЙ<br>
+                  ГОРОДОК</h2>
+              <p>- №1 -</p>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+      </div>
+
+        <div class="advantage-list1">
+          <article class="advantage-list1__item">
+            <img src="#" width="80" height="80" alt="img">
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </article>
+          <article class="advantage-list1__item">
+            <img src="#" width="80" height="80" alt="img">
+            <h2>Еда</h2>
+            <p>Всегда заказывай фирменный бургер, не разочаруетесь!</p>
+          </article>
+          <article class="advantage-list1__item">
+            <img src="#" width="80" height="80" alt="img">
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+          </article>
+        </div>
+
+      <div class="advantage  advantage2  clearfix">
+        <div class="advantage2__img"></div>
+        <div class="advantage2__info">
+          <h2>ТАМ ЕСТЬ<br>
+              МОСТ ДЬЯВОЛА</h2>
+          <p>- №2 -</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </div>
+
+        <div class="advantage-list2">
+          <article class="advantage-list2__item">
+            <h2>Небольшая<br>
+                площадь</h2>
+            <p>- №3 -</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </article>
+          <article class="advantage-list2__item">
+            <h2>Красивая
+                дорога<br></h2>
+            <p>- №4 -</p>
+            <p>Ехать в Седон из Лас-Вегаса совсем не скучно!</p>
+          </article>
+          <article class="advantage-list2__item">
+            <h2>Мало
+                туристов<br></h2>
+            <p>- №5 -</p>
+            <p>Большинство едет в Гранд каньон и толпится там</p>
+          </article>
+        </div>
+
+  </section>
+  
+  <section class="main-form">
+    <div class="main-form__wrapper">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки,<br>
+         и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <div class="form-body">
+        <div class="form-body__header">
+          <span>Поиск гостиницы в Седоне</span>
+        </div>
+        <form>
+          <fieldset>
+          <label>Дата заезда:</label>
+          <input type="date" name="date-in">
+          </fieldset>
+          <fieldset>
+          <label>Дата выезда:</label>
+          <input type="date" name="date-out" value="">
+          </fieldset>
+          <fieldset>
+          <label>Взрослые:</label>
+           <input type="number" name="adulds" min="1">
+
+          <label>Дети:</label>
+           <input type="number" name="children" min="1">
+           </fieldset>
+          <button type="submit" name="form-btn" class="btn  form-body__submit" value="Найти">Найти</button>
+        </form>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="footer__wrapper">
+      <p>#VIZITSEDONA</p>
+
+      <span class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link  social-link--vk" href="https://vk.com/">Мы в Вконтакте</a>
+            <a class="social-link  social-link--fb" href="https://fb.com/">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--in" href="https://instagramm.com/">Мы в Инстаграмме</a>
+          </span>
+          <span class="page-footer__copyright">
+            <a class="page-footer__copyright-link" href="#">Nik Ivanov</a>
+          </span>
+      </span>
+
+
+    </div>
+  </footer>
 </body>
 
 </html>
