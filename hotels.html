@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+<head>
+  <title>Sedona - городк в Аризоне</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <nav class="main-nav  clearfix">
+        <ul class="main-nav__list  main-nav__list--left">
+          <li>Информация</li>
+          <li>Фото и видео</li>
+        </ul>
+        <img src="img/main-header.png" alt="img" width="138" height="70">
+        <ul class="main-nav__list  main-nav__list--right">
+          <li>Карта штата</li>
+          <li>Гостинницы</li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <form class="form-search-hotel" id="form-search-hotel">
+          <fieldset form="form-search-hotel" class="form-hotel__structure">
+            <h2>Инфраструктура</h2>
+            <input type="checkbox" name="pool" id="chk-pool" checked>
+            <label for="chk-pool">Бассейн</label>
+            <br>
+            <input type="checkbox" name="parking" id="chk-parking">
+            <label for="chk-parking">Парковка</label>
+            <br>
+            <input type="checkbox" name="wifi" id="chk-wifi">
+            <label for="chk-wifi">WI-FI</label>
+          </fieldset>
+
+          <fieldset form="form-search-hotel" class="form-hotel__accommodation">
+            <h2>Тип жилья</h2>
+            <input type="checkbox" name="hotel" id="chk-hotel" checked>
+            <label for="chk-hotel">Гостиница</label>
+            <br>
+            <input type="checkbox" name="motel" id="chk-motel" checked>
+            <label for="chk-motel">Мотель</label>
+            <br>
+            <input type="checkbox" name="apartments" id="chk-apartments" checked>
+            <label for="chk-apartments">Апартаменты</label>
+          </fieldset>
+
+          <fieldset form="form-search-hotel" class="form-hotel__price">
+            <label for="price-range">Стоимость в сутки (Р):</label>
+            <br>
+            <input type="range" name="price-range" min="0" max="5000" value="3000" id="price-range">
+            <br>
+            <button class="search-hotel-button">Показать</button>
+          </fieldset>
+
+
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hotels-content  clearfix">
+      <div class="content-filter  clearfix">
+        <div class="content-filter__results">
+          <span>Найдено: </span><span>3</span>
+        </div>
+        <div class="content-filter__sorting">
+          <span>Сортировка: </span>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По рейтингу</a>
+        </div>
+        <div class="content-filter__course">
+          стрелочки
+        </div>
+      </div>
+      <div class="content-list">
+        <section class="hotel-unit">
+          <img src="img/hotel-1.jpg" alt="Amarata Resort &amp; Spa">
+          <div class="hotel-unit__info">
+            <h2>Amarata Resort &amp; Spa</h2>
+            <span>Гостиница </span><span> от 3500 р.</span>
+            <button class="hotel-btn-more">Подробнее</button>
+            <button class="hotel-btn-booking">Забронировать</button>
+          </div>
+          <div class="hotel-unit__rating">
+            <div>*****</div>
+            <div>Рейтинг: 8,5</div>
+          </div>
+        </section>
+
+        <section class="hotel-unit">
+          <img src="img/hotel-1.jpg" alt="Amarata Resort &amp; Spa">
+          <div class="hotel-unit__info">
+            <h2>Desert Quail Inn</h2>
+            <span>Мотель </span><span> от 2000 р.</span>
+            <button class="hotel-btn-more">Подробнее</button>
+            <button class="hotel-btn-booking">Забронировать</button>
+          </div>
+          <div class="hotel-unit__rating">
+            <div>**</div>
+            <div>Рейтинг: 8,9</div>
+          </div>
+        </section>
+
+        <section class="hotel-unit">
+          <img src="img/hotel-1.jpg" alt="Amarata Resort &amp; Spa">
+          <div class="hotel-unit__info">
+            <h2>Villas At Poco Diablo</h2>
+            <span>Апартаменты </span><span> от 4000 р.</span>
+            <button class="hotel-btn-more">Подробнее</button>
+            <button class="hotel-btn-booking">Забронировать</button>
+          </div>
+          <div class="hotel-unit__rating">
+            <div>***</div>
+            <div>Рейтинг: 9,2</div>
+          </div>
+        </section>
+
+      </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="footer__wrapper">
+      <p>#VIZITSEDONA</p>
+
+      <span class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link  social-link--vk" href="https://vk.com/">Мы в Вконтакте</a>
+            <a class="social-link  social-link--fb" href="https://fb.com/">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--in" href="https://instagramm.com/">Мы в Инстаграмме</a>
+          </span>
+          <span class="page-footer__copyright">
+            <a class="page-footer__copyright-link" href="#">Nik Ivanov</a>
+          </span>
+      </span>
+
+
+    </div>
+  </footer>
+</body>
+
+</html>
