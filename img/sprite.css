@@ -1,0 +1,54 @@
+.f-dis {
+	background: url("../img/sprite.png") 0 0;
+	width: 47px;
+	height: 48px;
+}
+
+.f-hov {
+	background: url("../img/sprite.png") 0 -48px;
+	width: 47px;
+	height: 48px;
+}
+
+.f {
+	background: url("../img/sprite.png") 0 -96px;
+	width: 47px;
+	height: 48px;
+}
+
+.t-dis {
+	background: url("../img/sprite.png") 0 -144px;
+	width: 46px;
+	height: 48px;
+}
+
+.t-hov {
+	background: url("../img/sprite.png") 0 -192px;
+	width: 46px;
+	height: 48px;
+}
+
+.t {
+	background: url("../img/sprite.png") 0 -240px;
+	width: 46px;
+	height: 48px;
+}
+
+.yout-dis {
+	background: url("../img/sprite.png") 0 -288px;
+	width: 46px;
+	height: 48px;
+}
+
+.yout-hov {
+	background: url("../img/sprite.png") 0 -336px;
+	width: 46px;
+	height: 48px;
+}
+
+.yout {
+	background: url("../img/sprite.png") 0 -384px;
+	width: 46px;
+	height: 48px;
+}
+

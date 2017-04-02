@@ -4,23 +4,34 @@
 <head>
   <title>Sedona - городк в Аризоне</title>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
+<!-- карта куда ее деть 
+
+  <div class="container-map">
+    <div class="map-footer"></div>
+  </div>
+
+-->
+
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-nav  clearfix">
-        <ul class="main-nav__list  main-nav__list--left">
-          <li>Информация</li>
-          <li>Фото и видео</li>
-        </ul>
-        <img src="img/main-header.png" alt="img" width="138" height="70">
-        <ul class="main-nav__list  main-nav__list--right">
-          <li>Карта штата</li>
-          <li>Гостинницы</li>
-        </ul>
-      </nav>
+      <div class="main-nav-container  clearfix">
+       <nav class="main-nav  clearfix">
+        <div class="main-nav__list">
+          <a href="#" class="active">Информация</a>
+          <a href="#">Фото и видео</a>
+       <img src="img/main-header.png" alt="img" width="138" height="70">
+          <a href="#" class="down">Карта штата</a>
+          <a href="#" class="active  down">Гостинницы</a>
+        </div>
+        
+       </nav>
+      </div>
 
       <div class="main-intro">
         <div class="main-intro__img"></div>
@@ -37,7 +48,9 @@
 
   <section class="main-content">
       <div class="advantage  advantage1  clearfix">
-          <div class="advantage1__img"></div>
+          <div class="advantage1__img">
+            <!-- <img src="img/advantage1.jpg" alt="img"> -->
+          </div>
           <div class="advantage1__info">
               <h2>НАСТОЯЩИЙ<br>
                   ГОРОДОК</h2>
@@ -48,17 +61,17 @@
 
         <div class="advantage-list1">
           <article class="advantage-list1__item">
-            <img src="#" width="80" height="80" alt="img">
+            <img src="img/i-house.png" width="80" height="80" alt="img">
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </article>
           <article class="advantage-list1__item">
-            <img src="#" width="80" height="80" alt="img">
+            <img src="img/i-burger.png" width="80" height="80" alt="img">
             <h2>Еда</h2>
             <p>Всегда заказывай фирменный бургер, не разочаруетесь!</p>
           </article>
           <article class="advantage-list1__item">
-            <img src="#" width="80" height="80" alt="img">
+            <img src="img/i-souvenir.png" width="80" height="80" alt="img">
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </article>
@@ -82,14 +95,14 @@
             <p>Все достопримечательности находятся очень близко</p>
           </article>
           <article class="advantage-list2__item">
-            <h2>Красивая
-                дорога<br></h2>
+            <h2>Красивая<br>
+                дорога</h2>
             <p>- №4 -</p>
-            <p>Ехать в Седон из Лас-Вегаса совсем не скучно!</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </article>
           <article class="advantage-list2__item">
-            <h2>Мало
-                туристов<br></h2>
+            <h2>Мало<br>
+                туристов</h2>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд каньон и толпится там</p>
           </article>
@@ -107,8 +120,9 @@
           <span>Поиск гостиницы в Седоне</span>
         </div>
         <form>
+          <div class="form-content">
           <fieldset>
-          <label>Дата заезда:</label>
+          <label class="form-content__left">Дата заезда:</label>
           <input type="date" name="date-in">
           </fieldset>
           <fieldset>
@@ -123,6 +137,7 @@
            <input type="number" name="children" min="1">
            </fieldset>
           <button type="submit" name="form-btn" class="btn  form-body__submit" value="Найти">Найти</button>
+          </div>
         </form>
       </div>
 
@@ -133,18 +148,19 @@
 
   <footer class="page-footer">
     <div class="footer__wrapper">
-      <p>#VIZITSEDONA</p>
+      <div class="hashtag"><span>#VIZITSEDONA</span></div>
 
-      <span class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link  social-link--vk" href="https://vk.com/">Мы в Вконтакте</a>
-            <a class="social-link  social-link--fb" href="https://fb.com/">Мы в Фейсбуке</a>
-            <a class="social-link  social-link--in" href="https://instagramm.com/">Мы в Инстаграмме</a>
-          </span>
-          <span class="page-footer__copyright">
-            <a class="page-footer__copyright-link" href="#">Nik Ivanov</a>
-          </span>
-      </span>
+      <div class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link  social-link--tw" href="https://twitter.com/">Мы в Твиттере</a>
+          <a class="social-link  social-link--fb" href="https://fb.com/">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--in" href="https://youtube.com/">Мы в Ютубе</a>
+        </span>
+      </div>
+         
+      <div class="page-footer__copyright">
+        <span>Разработано:</span><a class="page-footer__copyright-link" href="#">Nik_Ivanov</a>
+      </div>
 
 
     </div>

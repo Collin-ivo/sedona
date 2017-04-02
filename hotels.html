@@ -4,25 +4,31 @@
 <head>
   <title>Sedona - городк в Аризоне</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-nav  clearfix">
+      <div class="main-nav-container  clearfix">
+       <nav class="main-nav  clearfix">
         <ul class="main-nav__list  main-nav__list--left">
           <li>Информация</li>
           <li>Фото и видео</li>
         </ul>
-        <img src="img/main-header.png" alt="img" width="138" height="70">
         <ul class="main-nav__list  main-nav__list--right">
           <li>Карта штата</li>
           <li>Гостинницы</li>
         </ul>
+        <img src="img/main-header.png" alt="img" width="138" height="70">
+        
       </nav>
+      </div>
+
       <div class="header-search">
         <form class="form-search-hotel" id="form-search-hotel">
+          <div class="form-hotel__structure--wrapper">
           <fieldset form="form-search-hotel" class="form-hotel__structure">
             <h2>Инфраструктура</h2>
             <input type="checkbox" name="pool" id="chk-pool" checked>
@@ -34,6 +40,7 @@
             <input type="checkbox" name="wifi" id="chk-wifi">
             <label for="chk-wifi">WI-FI</label>
           </fieldset>
+          </div>
 
           <fieldset form="form-search-hotel" class="form-hotel__accommodation">
             <h2>Тип жилья</h2>
