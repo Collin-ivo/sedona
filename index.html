@@ -26,8 +26,8 @@
           <a href="#" class="active">Информация</a>
           <a href="#">Фото и видео</a>
        <img src="img/main-header.png" alt="img" width="138" height="70">
-          <a href="#" class="down">Карта штата</a>
-          <a href="#" class="active  down">Гостинницы</a>
+          <a href="#">Карта штата</a>
+          <a href="#">Гостинницы</a>
         </div>
         
        </nav>
@@ -123,18 +123,23 @@
           <div class="form-content">
           <fieldset>
           <label class="form-content__left">Дата заезда:</label>
-          <input type="date" name="date-in">
+          <input type="date" name="date-in" value="2017-04-24">
           </fieldset>
           <fieldset>
           <label>Дата выезда:</label>
-          <input type="date" name="date-out" value="">
+          <input type="date" name="date-out" value="2017-07-24">
           </fieldset>
-          <fieldset>
+          <fieldset class="numder-people">
+            <div>
           <label>Взрослые:</label>
-           <input type="number" name="adulds" min="1">
-
+          <output class="range-form  range-form__adult"><span class="minus"></span><span>2</span><span class="plus"></span></output>
+           <!-- <input type="number" name="adulds" min="1"> -->
+            </div>
+            <div>
           <label>Дети:</label>
-           <input type="number" name="children" min="1">
+          <output class="range-form  range-form__adult"><span class="minus"></span><span>1</span><span class="plus"></span></output>
+           <!-- <input type="number" name="children" min="1"> -->
+            </div>
            </fieldset>
           <button type="submit" name="form-btn" class="btn  form-body__submit" value="Найти">Найти</button>
           </div>
@@ -152,9 +157,9 @@
 
       <div class="page-footer__social">
         <span class="social-links">
-          <a class="social-link  social-link--tw" href="https://twitter.com/">Мы в Твиттере</a>
-          <a class="social-link  social-link--fb" href="https://fb.com/">Мы в Фейсбуке</a>
-          <a class="social-link  social-link--in" href="https://youtube.com/">Мы в Ютубе</a>
+          <a class="social-link  social-link--tw" href="#">Мы в Твиттере</a>
+          <a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--in" href="#">Мы в Ютубе</a>
         </span>
       </div>
          

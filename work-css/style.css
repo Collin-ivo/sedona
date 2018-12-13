@@ -315,12 +315,19 @@ body{
     margin-right: auto;
     font-family: inherit;
     min-height: 48px;
+    margin-bottom: 28px;
 }
 .form-content input {
     text-transform: uppercase;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 700;
+}
+.form-body fieldset label {
+    vertical-align: center;
+    float: left;
+    line-height: 26px;
+    padding: 6px 0;
 }
 .form-content input[type="date"] {
     border: none;
@@ -329,8 +336,54 @@ body{
     height: 38px;
     width: 346px;
     background: #f2f2f2;
+    float: right;
 }
-
+.numder-people {
+    position: relative;
+}
+.numder-people div {
+    display: inline-block;
+    position: absolute;
+}
+.numder-people div label {
+    display: inline-block;
+}
+.numder-people div:first-child {
+    left: 0;
+}
+.numder-people div:last-child {
+    right: 0;
+}
+.range-form {
+    position: relative;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    box-sizing: border-box;
+    height: 38px;
+    width: 114px;
+    background: #f2f2f2;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 12px;
+    float: right;
+    margin-left: 40px;
+}
+.minus {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../img/minus.png) no-repeat center;
+    cursor: pointer;
+}
+.plus {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../img/plus.png) no-repeat center;
+    cursor: pointer;
+}
 
 
 .btn {
